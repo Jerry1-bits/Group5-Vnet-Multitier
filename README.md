@@ -1,12 +1,11 @@
 ------------------------------------------------------------
 
-**Group 5 - Azure Virtual Network Multi-Tier Deployment
+Group 5 - Azure Virtual Network Multi-Tier Deployment
 
 Prepared by:       Jeremiah Oyewo and Group 5 Members  
 Course:            AWS Cloud Computing Cohort 3
 Institution:       TechCrush  
 Date:              November 2025
-**
 ------------------------------------------------------------
 
 ##  Objective
