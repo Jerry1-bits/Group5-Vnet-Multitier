@@ -26,6 +26,7 @@ Deploy a secure **multi-tier cloud architecture** using Azure CLI and enforce **
 - Test connections between VMs to confirm NSG restrictions.
 
 ## 📸 Architecture Screen capture
+*Access screenshot of the vnet architecture*
 
 ## 🪪 License
 Licensed under the MIT License.
