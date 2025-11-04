@@ -1,41 +1,35 @@
-# 🚀 Group 5 — Azure Multi-Tier Architecture Deployment (Simulated)
+# Group 5 – Azure VNet Multi-Tier Deployment
 
-### 🎯 Objective
-To design and simulate the deployment of a **Virtual Network (VNet)-based multi-tier architecture** on Microsoft Azure using CLI scripting, enforcing network isolation and access control.
+## 🎯 Objective
+Deploy a secure **multi-tier cloud architecture** using Azure CLI and enforce **network access control**.
 
----
+## 🧱 Architecture
+**Layers:**
+- **Web Tier** (Public-facing)
+- **App Tier** (Internal)
+- **Database Tier** (Private)
 
-### 🧩 Architecture Overview
+### Azure Resources
+- Virtual Network (VNet)
+- 3 Subnets (Web, App, DB)
+- 3 Network Security Groups (NSGs)
+- 3 Virtual Machines
 
-This project represents a **three-tier architecture**:
-- **Web Subnet** – hosts front-end servers (public access)
-- **App Subnet** – internal business logic (private)
-- **DB Subnet** – database layer (isolated and secured)
+## ⚙️ Deployment Steps
+1. Run `validate_cli.sh` to confirm Azure CLI setup.
+2. Run `vnet_create.sh` to create your VNet and Subnets.
+3. Run `nsg_rules.sh` to configure NSG rules.
+4. Run `vm_setup.sh` to deploy the three-tier VMs.
 
-Each subnet is protected with its own **Network Security Group (NSG)**.
+## 📘 Notes
+- Modify variables (like region or names) if needed.
+- Test connections between VMs to confirm NSG restrictions.
 
-The architecture enforces:
-- Restricted access from the internet to only the Web tier
-- Layered communication between tiers (Web → App → DB)
-- No direct internet access to App or DB tiers
+## 📸 Architecture Screen capture
 
-📘 **Architecture Diagram**
-![Azure Architecture](./architecture/azure_architecture.png)
+## 🪪 License
+Licensed under the MIT License.
 
----
-
-### 🧠 Deployment Workflow
-
-| Step | Script | Description |
-|------|---------|-------------|
-| 1 | `vnet_create.sh` | Creates the VNet and subnets |
-| 2 | `nsg_rules.sh` | Creates and attaches NSGs to subnets |
-| 3 | `vm_setup.sh` | Simulates VM deployment per tier |
-| 4 | `validate_cli.sh` | Validates CLI syntax and structure |
-
----
-
-### ⚙️ Prerequisites
 
 1. Install **Azure CLI** → https://learn.microsoft.com/cli/azure/install-azure-cli  
 2. Install **Git**  
