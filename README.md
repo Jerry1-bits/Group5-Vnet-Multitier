@@ -1,14 +1,18 @@
+------------------------------------------------------------
+
 Group 5 - Azure Virtual Network Multi-Tier Deployment
-Prepared by: Jeremiah Oyewo and Group 5 Members
-Course: AWS Cloud Computing Cohort 3
-Institution: TechCrush
-Date: November 2025
 
+Prepared by:       Jeremiah Oyewo and Group 5 Members  
+Course:            AWS Cloud Computing Cohort 3
+Institution:       TechCrush  
+Date:              November 2025
 
-## 🎯 Objective
+------------------------------------------------------------
+
+##  Objective
 Deploy a secure **multi-tier cloud architecture** using Azure CLI and enforce **network access control**.
 
-## 🧱 Architecture
+##  Architecture
 **Layers:**
 - **Web Tier** (Public-facing)
 - **App Tier** (Internal)
@@ -20,20 +24,20 @@ Deploy a secure **multi-tier cloud architecture** using Azure CLI and enforce **
 - 3 Network Security Groups (NSGs)
 - 3 Virtual Machines
 
-## ⚙️ Deployment Steps
+##  Deployment Steps
 1. Run `validate_cli.sh` to confirm Azure CLI setup.
 2. Run `vnet_create.sh` to create your VNet and Subnets.
 3. Run `nsg_rules.sh` to configure NSG rules.
 4. Run `vm_setup.sh` to deploy the three-tier VMs.
 
-## 📘 Notes
+## Notes
 - Modify variables (like region or names) if needed.
 - Test connections between VMs to confirm NSG restrictions.
 
 ## 📸 Architecture Screen capture
 *Access screenshot of the vnet architecture*
 
-## 🪪 License
+##  License
 Licensed under the MIT License.
 
 
