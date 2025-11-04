@@ -1,0 +1,10 @@
+# Ignore temp files and system files
+*.log
+*.tmp
+*.bak
+.DS_Store
+*.swp
+*.swo
+*.history
+*.out
+*.gz
